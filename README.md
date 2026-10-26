@@ -11,6 +11,14 @@ The Application collects information when you download and use it. This informat
 *   The time spent on the Application
 *   your mobile operating system you use
 
+**Accessibility Service Declaration**
+
+The Application uses the Android AccessibilityService API strictly to assist users by performing automated screen taps, gestures, and UI interactions as configured by the user. 
+
+*   The AccessibilityService API is used solely for the core functionality of automated task execution and visual assistant operations.
+*   The Service Provider does not use the AccessibilityService API to monitor, collect, store, or transmit any sensitive personal data, user keystrokes, passwords, screen content, or financial information.
+*   All automated actions triggered via the AccessibilityService API are executed locally on your device and are never shared with any third party.
+
 **Cookies and tracking technologies**
 
 The Application or its third-party SDKs may use cookies, SDKs, pixels, and similar technologies to support functionality, analytics, or service delivery. Where required by applicable law, the Service Provider will obtain consent before using non-essential tracking technologies.

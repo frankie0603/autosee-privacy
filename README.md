@@ -1,120 +1,91 @@
-**Privacy Policy**
+# Privacy Policy for AutoSee
 
-This privacy policy applies to the AutoSee app for mobile devices, together with any related services operated by AutoSee Team (collectively, the "Application"). AutoSee Team is hereby referred to as the "Service Provider".
+**Effective Date:** 2026-11-15  
+**Developer / Service Provider:** AutoSee Team  
+**Contact Email:** autosee.support@gmail.com  
 
-**Information Collection and Use**
+This Privacy Policy applies to the **AutoSee** mobile application (the "Application") for Android devices, developed and provided by **AutoSee Team** (the "Service Provider") as an Ad-Supported and Freemium service.
 
-The Application collects information when you download and use it. This information may include information such as
+---
 
-*   Your device's Internet Protocol address
-*   The pages of the Application that you visit, the time and date of your visit, the time spent on those pages
-*   The time spent on the Application
-*   your mobile operating system you use
+## 1. Accessibility Service & Screen Capture Declaration
 
-**Accessibility Service Declaration**
+To deliver its core screen-automation features, the Application requests Android **AccessibilityService API**, **MediaProjection (Screen Capture)**, and **Display Over Other Apps (Overlay)** permissions only after obtaining your explicit consent.
 
-The Application uses the Android AccessibilityService API strictly to assist users by performing automated screen taps, gestures, and UI interactions as configured by the user. 
+- **Purpose of Use:** These permissions are used solely to detect user-configured visual templates, on-screen text, or pixel colors, and to execute automated taps, swipes, long-presses, and gesture workflows configured by you.
+- **100% On-Device Visual Processing:** All screen captures, image template matching (OpenCV), and text recognition (Google ML Kit OCR) are processed **exclusively in volatile memory on your local device**.
+- **Strict Non-Collection Guarantee for Screen Content:** The Application does **not** upload, transmit, log, or share your screen recordings, screenshots, passwords, keystrokes, or personal screen contents to our servers or any third party.
+- **User Control:** You may pause, disable, or revoke Accessibility, Screen Capture, or Overlay permissions at any time through your Android system settings.
 
-*   The AccessibilityService API is used solely for the core functionality of automated task execution and visual assistant operations.
-*   The Service Provider does not use the AccessibilityService API to monitor, collect, store, or transmit any sensitive personal data, user keystrokes, passwords, screen content, or financial information.
-*   All automated actions triggered via the AccessibilityService API are executed locally on your device and are never shared with any third party.
+---
 
-**Cookies and tracking technologies**
+## 2. Information Collection and Use
 
-The Application or its third-party SDKs may use cookies, SDKs, pixels, and similar technologies to support functionality, analytics, or service delivery. Where required by applicable law, the Service Provider will obtain consent before using non-essential tracking technologies.
+While screen contents never leave your device, the Application collects and processes limited account, device, subscription, and diagnostic information necessary to operate authentication, quota management, subscriptions, advertising, and stability monitoring:
 
-**Your Rights**
+- **Account & Authentication Data:** When you choose to sign in with Google, we receive your Firebase User ID (`uid`) and Email address to identify your account, sync VIP status/quotas, and prevent multi-device abuse.
+- **Device & Advertising Identifiers:** Device model, OS version, app version, crash traces, diagnostic logs, and Google Advertising ID (`AD_ID`) for ad delivery and fraud prevention.
+- **Usage & Purchase Status:** App feature interactions, daily quota usage, promo code redemptions, and Google Play subscription verification status.
 
-You may request access to, correction of, or deletion of your personal data held by the Service Provider. To exercise these rights, or to withdraw consent where processing is based on consent, contact the Service Provider at autosee.support@gmail.com.
+*(The Application does not collect precise GPS location data.)*
 
-**Your California privacy rights (CCPA/CPRA)**
+---
 
-If you are a California resident, you have the right to know what personal information is collected, the right to delete personal information, the right to opt out of the sale or sharing of personal information, and the right to non-discrimination for exercising these rights. To exercise your CCPA/CPRA rights, contact the Service Provider at autosee.support@gmail.com.
+## 3. Third-Party Services
 
-The Service Provider may use the information you provide to send important information, required notices, and, where permitted by law, marketing communications.
+The Application uses third-party services that have their own Privacy Policies governing data handling:
 
-For a better experience while using the Application, the Service Provider may require you to provide certain personally identifiable information, including but not limited to Email address, User ID, Device ID, Advertising ID. The information the Service Provider requests will be retained and used as described in this privacy policy.
+- [Google Play Services & Google Play Billing](https://www.google.com/policies/privacy/)
+- [AdMob](https://support.google.com/admob/answer/6128543?hl=en)
+- [Google Analytics for Firebase](https://firebase.google.com/support/privacy)
+- [Firebase Crashlytics](https://firebase.google.com/support/privacy/)
+- [Firebase Authentication & Cloud Firestore](https://firebase.google.com/support/privacy/)
 
-**Third Party Access**
+Data transmitted for authentication, cloud quota synchronization, subscription verification, analytics, crash reporting, and advertising is encrypted in transit via HTTPS/TLS.
 
-Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application and their service. The Service Provider may share your information with third parties in the ways that are described in this privacy statement.
+---
 
-**International Data Transfers**
+## 4. Account Deletion & Data Retention Policy {#account-deletion}
 
-The Service Provider or its third-party service providers may transfer personal data to countries outside your country of residence, including outside the European Economic Area (EEA). Where applicable law requires safeguards for international transfers, the Service Provider will use appropriate mechanisms.
+In compliance with Google Play's Account Deletion Policy, **AutoSee** provides both in-app and web/email methods to delete your account and associated cloud data:
 
-*   Standard Contractual Clauses (SCCs) approved by the European Commission
-*   Adequacy decisions or other legally recognized transfer mechanisms
-*   Your consent, where required and legally permitted
+### Method A: Delete Account Directly Inside the App (Recommended)
+1. Open **AutoSee** on your Android device.
+2. Open the **Account / VIP Center** dialog from the Home screen.
+3. Tap **"Delete Account" (刪除帳號)** and confirm the prompt (you may be asked to re-verify your Google login for security).
+4. Your Firebase Authentication account and associated Cloud Firestore user records will be permanently deleted.
 
-Data protection laws in other countries may differ from those in your jurisdiction. Where required by law, the Service Provider will apply appropriate safeguards and obtain any consent required for the transfer.
+### Method B: Request Account Deletion via Email (If You Uninstalled the App)
+1. Send an email from your registered Google account email address to **`autosee.support@gmail.com`**.
+2. Use the subject line: **`AutoSee Account Deletion Request`**.
+3. We will verify ownership and permanently delete your cloud account records within **7 business days**.
 
-Please note that the Application utilizes third-party services that have their own Privacy Policy about handling data. Below are the links to the Privacy Policy of the third-party service providers used by the Application:
+### What Data Is Deleted vs. Retained
+- **Deleted Immediately / Within 7 Days:** Your Firebase Authentication account (`uid`, email link) and your Cloud Firestore user profile, quota records, and active VIP device session records.
+- **Local App Data:** Automation scripts and templates are stored locally on your device and can be removed by clearing app data or uninstalling AutoSee.
+- **Retained by Law or Anonymized:** Google Play Billing transaction receipts/invoices are retained by Google in accordance with tax and legal obligations (please note that deleting your AutoSee account does **not** automatically cancel an active Google Play subscription—manage or cancel subscriptions directly in Google Play Store). Aggregated, anonymized crash/analytics telemetry that cannot be linked back to your identity may be retained for service stability.
 
-*   [Google Play Services](https://www.google.com/policies/privacy/)
-*   [AdMob](https://policies.google.com/technologies/partner-sites)
-*   [Google Analytics for Firebase](https://firebase.google.com/support/privacy)
-*   [Firebase Crashlytics](https://firebase.google.com/support/privacy/)
+---
 
-The Service Provider may disclose User Provided and Automatically Collected Information:
+## 5. Children's Privacy
 
-*   as required by law, such as to comply with a subpoena, or similar legal process;
-*   when they believe in good faith that disclosure is necessary to protect their rights, protect your safety or the safety of others, investigate fraud, or respond to a government request;
-*   with their trusted services providers who work on their behalf, do not have an independent use of the information the Service Provider discloses to them, and have agreed to adhere to the rules set forth in this privacy statement.
+The Application is not directed to anyone under the age of 16. We do not knowingly collect personally identifiable information from children under 16. If you believe a child has provided personal information, please contact **`autosee.support@gmail.com`** so we can promptly delete it.
 
-**Opt-Out Rights**
+---
 
-You can stop further collection of information from your mobile device by uninstalling the Application. Uninstalling will stop the Application from collecting data from your device, but it does not automatically delete information that has already been transmitted to the Service Provider or to third parties.
+## 6. Security & International Transfers
 
-To request deletion of your personal data, to withdraw consent, or to exercise any of your rights, contact the Service Provider at autosee.support@gmail.com.
+We value your trust and employ encryption in transit (HTTPS/TLS) and hardware-backed local encryption (`EncryptedSharedPreferences` / Android Keystore) where supported. Third-party cloud providers (such as Google Firebase) may process data on servers located outside your region in accordance with applicable data protection frameworks (including GDPR/CCPA safeguards).
 
-**Data Retention Policy**
+---
 
-The Service Provider retains personal data based on its necessity for the stated purposes:
+## 7. Changes to This Privacy Policy
 
-*   User Provided Data: Retained for the duration of your use of the Application plus 12 months thereafter, unless longer retention is required by law
-*   Automatically Collected Data: Retained for up to 24 months from collection, unless longer retention is required for legal compliance
-*   Aggregated and Anonymized Data: Retained indefinitely as it no longer identifies you
-*   Data required for legal compliance: Retained as long as required by applicable law
+This Privacy Policy may be updated from time to time. Changes will be posted on this page with an updated effective date.
 
-You may request deletion of your personal data, subject to any legal obligation to retain it. If you want the Service Provider to delete User Provided Data submitted through the Application, please contact them at autosee.support@gmail.com. Please note that some User Provided Data may be required for the Application to function properly.
+---
 
-**Data Deletion**
+## 8. Contact Us
 
-You can request deletion of your personal data or account by contacting the Service Provider at autosee.support@gmail.com. The Service Provider will process your request within the timeframes required by applicable law.
-
-Upon verification of your identity, the Service Provider will delete your personal data from its systems, except where retention is required for legal compliance or legitimate business purposes.
-
-**Children**
-
-The Application is not intended for children under 16 years of age, or such higher age as required by applicable law. The Service Provider does not knowingly solicit data from children or market the Application to them.
-
-Where parental or guardian consent is required under applicable law, the Application is not intended for use without that consent. The Service Provider does not knowingly collect personally identifiable information from children under 16 years of age in violation of applicable law. In the event the Service Provider discovers that a child has provided personal information, the Service Provider will immediately delete this from their servers. If you are a parent or guardian and you are aware that your child has provided the Service Provider with personal information, please contact the Service Provider (autosee.support@gmail.com) so that they will be able to take the necessary actions.
-
-**Security**
-
-The Service Provider is concerned about safeguarding the confidentiality of your information. The Service Provider provides physical, electronic, and procedural safeguards to protect information the Service Provider processes and maintains.
-
-**Data Breach Notification**
-
-If a data breach occurs that affects your personal data, the Service Provider will notify you in accordance with applicable legal requirements, including, where required, providing information about the nature of the breach and the steps being taken to address it.
-
-**Changes**
-
-The Service Provider may update this Privacy Policy from time to time. The Service Provider will notify you of material changes by posting the updated Privacy Policy with an effective date. Where required by law, the Service Provider will seek your consent to material changes before they take effect.
-
-Previous versions of this Privacy Policy will be maintained and made available upon request by contacting the Service Provider at autosee.support@gmail.com.
-
-This privacy policy is effective as of 2026-10-26
-
-**Your Consent**
-
-Where processing is based on consent, you provide that consent by affirmatively opting in to the relevant feature or action. You may withdraw consent at any time without affecting processing carried out before withdrawal. Processing based on other lawful bases is carried out as described above.
-
-**Contact Us**
-
-If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at autosee.support@gmail.com.
-
-* * *
-
-<span>This privacy policy page was generated by</span> [App Privacy Policy Generator](https://app-privacy-policy-generator.nisrulz.com/)
+If you have any questions about this Privacy Policy or data deletion requests, please contact **AutoSee Team** at:  
+**Email:** autosee.support@gmail.com

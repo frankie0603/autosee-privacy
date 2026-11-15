@@ -45,7 +45,10 @@ Data transmitted for authentication, cloud quota synchronization, subscription v
 
 ---
 
-## 4. Account Deletion & Data Retention Policy {#account-deletion}
+<a id="account-deletion"></a>
+
+## 4. Account Deletion & Data Retention Policy
+
 
 In compliance with Google Play's Account Deletion Policy, **AutoSee** provides both in-app and web/email methods to delete your account and associated cloud data:
 
@@ -73,19 +76,27 @@ The Application is not directed to anyone under the age of 16. We do not knowing
 
 ---
 
-## 6. Security & International Transfers
+## 6. Your Privacy Rights & Opt-Out (GDPR / CCPA)
+
+- **Revoking Permissions & Uninstalling:** You may halt all local screen capture and automation data processing at any time by revoking permissions in Android Settings or uninstalling the Application.
+- **Advertising Opt-Out:** You can reset or limit ad personalization via your Android device's Google Ads Settings (`Settings > Privacy > Ads`).
+- **Access, Correction & Deletion (GDPR / CCPA / CPRA):** Depending on your region, you have the right to request access to, correction of, or deletion of your account data via the in-app "Delete Account" button or by emailing `autosee.support@gmail.com`. **AutoSee Team does not sell or rent your personal information to third parties.**
+
+---
+
+## 7. Security & International Transfers
 
 We value your trust and employ encryption in transit (HTTPS/TLS) and hardware-backed local encryption (`EncryptedSharedPreferences` / Android Keystore) where supported. Third-party cloud providers (such as Google Firebase) may process data on servers located outside your region in accordance with applicable data protection frameworks (including GDPR/CCPA safeguards).
 
 ---
 
-## 7. Changes to This Privacy Policy
+## 8. Changes to This Privacy Policy
 
 This Privacy Policy may be updated from time to time. Changes will be posted on this page with an updated effective date.
 
 ---
 
-## 8. Contact Us
+## 9. Contact Us
 
 If you have any questions about this Privacy Policy or data deletion requests, please contact **AutoSee Team** at:  
 **Email:** autosee.support@gmail.com
